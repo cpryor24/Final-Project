@@ -218,10 +218,10 @@ header .default-settings-logout {
 }
 
 /*****
-* Login & Signup Form
+* Login, Signup & User-Settings Form
 *****/
 
-.login-form, .signup-form{
+.login-form, .signup-form, .user-settings-form{
   width: 350px;
   min-height: 350px;
   padding: 30px;
@@ -234,7 +234,7 @@ header .default-settings-logout {
   background-color: rgba(255, 255, 255, 0.04);
 }
 
-.logindiv, .signupdiv {
+.logindiv, .signupdiv, .settingdiv {
   opacity: 0.92;
   position: absolute;
   top: 0px;
@@ -273,6 +273,30 @@ header .default-settings-logout {
 
 .terms {
   font-size: 10pt !important;
+}
+
+.settings-container {
+  overflow: hidden;
+  background-color: red;
+}
+
+.settings-title {
+  float: left;
+  /*margin: 20px;*/
+  background-color: orange;
+  /*padding: 10px;*/
+}
+
+.settings-content {
+  margin-left: 175px;
+  v
+  background-color: green;
+  /*height: 80px;*/
+}
+
+.setttings-content > input {
+  /*margin-top: 10px;*/
+  padding: 10px;
 }
 
 
@@ -825,7 +849,7 @@ div.today-message-board {
   background-color: #FFF;
 }
 
-.today-message-board > div, .trainer-message-board-post, .user-message-board-post, .today-exercise-tiles, .today-workout-completed-tiles, .login-form, .signup-form {
+.today-message-board > div, .trainer-message-board-post, .user-message-board-post, .today-exercise-tiles, .today-workout-completed-tiles, .login-form, .signup-form, .user-settings-form {
   box-shadow: 1px 5px 10px -5px black;
   border: 1px solid lightgrey;
   border-radius: 5px;
