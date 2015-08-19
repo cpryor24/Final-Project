@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BUFF N STUFF</title>
+	<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css' rel='styleshee' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=IM+Fell+French+Canon:400italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<!-- <body class="img-container"> -->
+<body>
+	<header class="primary-nav">
+		<div>
+			<ul class="weeks"><span>Week</span>
+				<li class="week-1">1</li>
+				<li class="week-2">2</li>
+				<li class="week-3">3</li>
+				<li class="week-4">4</li>
+				<li class="week-5">5</li>
+				<li class="week-6">6</li>
+				<li class="week-7">7</li>
+				<li class="week-8">8</li>
+				<li class="week-9">9</li>
+				<li class="week-10">10</li>
+				<li class="week-11">11</li>
+				<li class="week-12">12</li>
+			</ul>
+			<div class="default-settings-logout"><i class="fa fa-cog fa-spin"></i> <a href="settings.html">Settings</a> | <i class="fa fa-sign-out"></i> Sign Out</div>
+		</div>
+	</header>
+
+	<div class="user-session">
+		<div>
+			<aside class="user-tracking">
+				<div class="default-logo">buff n stuff</div>
+				<div class="user-tracking-image">
+					<img src="../images/wo1.jpg" alt="">
+				</div>
+				<div class="trainer-image">
+					<img src="../images/headshot.jpg" alt="Trainer">
+				</div>
+				<div class="week-progress-nav">week 3 progress:</div>
+				<div class="pie-chart-nav popup">14%</div>
+				<div class="day-nav">
+					<p><i class="fa fa-sun-o fa-2x"></i></p>
+					<p><a href="day.html">my day</a></p>
+				</div>
+				<div class="progress-chart-nav active-bg-font">
+					<p><i class="fa fa-line-chart fa-2x"></i></p>
+					<p>progress</p>
+				</div>
+				<div class="schedule-nav">
+					<p><i class="fa fa-calendar fa-2x"></i></p>
+					<p><a href="schedule.html">schedule</a></p>
+				</div>
+				<div class="anchor-day-nav">
+					<p><i class="fa fa-anchor fa-2x"></i></p>
+					<p>Anchor Day</p>
+					<p class="anchor-day">in 6 days</p>
+				</div>
+			</aside>
+			
+			<main class="user-progress">
+				<div>
+					<div class="progress-header">
+						<div class="days-completed">
+								<p>Days Completed:</p>
+								<p class="prog-number-of-days">57</p>
+						</div>
+						<div class="sessions-completed">
+								<p>Sessions Completed:</p>
+								<p class="prog-number-of-sessions">36</p>
+						</div>
+						<div class="session-streak">
+								<p>Longest Session Streak:</p>
+								<p class="prog-longest-streak">6</p>
+						</div>
+						<div class="sessions-minutes">
+								<p>Longest Session Streak:</p>
+								<p class="prog-total-minutes">3,298</p>
+						</div>	
+					</div>
+					<div class="user-chart"><img src="../images/chart.png" alt=""></div>
+				</div>
+			</main>
+		</div>
+	</div>
+	
+	<script src="../src/index.js"></script>
+	<script src="../node_modules/highcharts-release/highcharts.js"></script>
+</body>
+</html>
