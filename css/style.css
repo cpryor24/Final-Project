@@ -1,0 +1,893 @@
+/****************************************
+  Inherited Syles
+*****************************************/
+html {
+    box-sizing: border-box;
+    color: #444;
+    font: 12pt 'Open Sans', Arial;
+    font-weight: 300;
+}
+
+/****************************************
+  Resets
+*****************************************/
+*, *::before, *::after {
+    box-sizing: inherit;
+    color: inherit;
+    font: inherit;
+}
+ 
+/****************************************
+  Defaults
+*****************************************/
+body {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+button:focus, textarea:focus {
+  outline: none;
+}
+
+/****************************************
+  Helpers
+*****************************************/
+.cf::after {
+    content: '';
+    display: block;
+    clear: both;
+} 
+
+/****************************************
+  Layout
+*****************************************/
+/*****
+* Day-Header
+*****/
+
+/*body {
+  background: url('../images/bg.jpg');
+  background-size: cover;
+}*/
+
+header.primary-nav {
+  position: relative;
+  overflow: hidden;
+  margin-left: 10%;
+  padding: 10px;
+  padding-left: 50px;
+  background-color: rgba(146, 164, 184, 0.28);
+}
+
+header .week {
+  margin: 0;
+  float: right;
+}
+
+header .weeks {
+  float: right;
+  width: 90%;
+  margin: 0;
+}
+
+header .weeks > span {
+  color: #FFF;
+  font-size: 16pt;
+}
+
+header .weeks > li {
+  display: inline-block;
+  list-style: none;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  color: rgba(214, 214, 214, 1);
+  background-color: rgba(35, 46, 52, 0.17);
+  font-size: 18pt;
+  text-align: center !important;
+  margin-left: 15px;
+  padding: 10px;
+  line-height: 1.2;
+}
+
+header .default-settings-logout {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  color: #FFF;
+}
+
+/*****
+* Today-Header
+*****/
+
+.today-training {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.today-header {
+  position: relative;
+}
+
+.today-logo {
+  color: #FFD52C;
+  margin-top: 5px;
+  font-size: 20pt;
+  display: inline;
+  margin-left: 20px;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  font-family: 'IM Fell French Canon';
+}
+
+.today-logo, .today-header > div:nth-child(2) {
+  left: 0;
+} 
+
+.today-logo, .today-header > div:nth-child(2), .today-header-nav {
+  position: absolute;
+  top: 0;
+}
+
+.today-header > div:nth-child(2) {
+  margin-left: 225px;
+}
+
+.today-header-nav {
+  right: 0;
+  margin-right: 10px;
+}
+
+.today-header > div:nth-child(2), .today-header-nav {
+  margin-top: 10px;
+}
+
+.today-header-nav a {
+  padding: 10px;
+}
+
+.today-training, .today-container {
+  /*background-color: gray;*/
+  font-weight: bold;
+  color: #666;
+}
+
+/****************************************
+  Components
+*****************************************/
+
+/*****
+* Login & Signup Form
+*****/
+
+.login-form, .signup-form{
+  width: 350px;
+  min-height: 350px;
+  padding: 30px;
+  margin:0px;
+  left: 50%;
+  top: 50%;
+  margin-left:-210px;
+  margin-top:-158px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.logindiv, .signupdiv {
+  opacity: 0.92;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.31);
+  display: none;
+}
+
+.login-reg-container > * + *, .signup-reg-container > * + * {
+  margin-top: 10px;
+}
+
+.login-email > input, .confirm-email > input, .password > input, .confirm-password > input, .login-reg-btn {
+  height: 45px;
+  width: 216px;
+  padding: 10px;
+}
+
+.login-content, .forgot-password-link, .signup-content, .terms-link {
+  color: #2CB396;
+}
+
+.login-reg-container, .signup-reg-container {
+  text-align: center;
+}
+
+.forgot-password, .terms {
+  margin-top: 16px !important;
+}
+
+.signup-form {
+  top: 30% !important;
+}
+
+.terms {
+  font-size: 10pt !important;
+}
+
+
+/*****
+* Login & Signup Logo
+*****/
+.logo-reg {
+  color: #2CB396;
+  font-size: 20pt;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'IM Fell French Canon';
+}
+
+/*****
+* Login & Signup Button
+*****/
+.login-reg-btn {
+  background-color: #2CB396;
+  color: #FFF;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  }
+
+/*****
+* Aside - Day User Homepage
+*****/
+
+.user-session {
+  overflow: hidden;
+}
+
+.user-tracking {
+  position: fixed;
+  margin-top: -70px;
+  width: 10%;
+  height: 100%;
+  background-color: #F4F4F4;
+  text-align: center;
+  float: left;
+  font-size: 12pt;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.user-tracking > div > p:nth-child(odd) {
+  margin: 0;
+}
+
+.user-tracking > div > p:nth-child(2) {
+  margin: 5px !important;
+}
+
+.default-logo {
+  height: 70px;
+  background-color: #26AE90 !important;
+  padding: 15px;
+  color: #FFF;
+  font-size: 16pt;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'IM Fell French Canon';
+  font-style: italic;
+  line-height: 2;
+} 
+
+.user-tracking-image {
+  height: 190px;
+  width: 100%;
+  background-color: red;
+}
+
+.user-tracking-image > img {
+  width: 100%;
+  height: 100%;
+}
+
+.trainer-image > img {
+  border-radius: 50px;
+  border: 2px solid white;
+  height: 60px;
+  width: 60px;
+}
+
+.trainer-image > img {
+  margin-left: 5px;
+  margin-top: -20px;
+}
+
+.week-progress-nav, .pie-chart-nav, .day-nav, .progress-chart-nav, .schedule-nav, .anchor-day-nav {
+  height: 125px;
+  width: 100%;
+  font-size: 14pt;
+}
+
+.week-progress-nav, .pie-chart-nav {
+  height: 100px !important;
+  padding: 15px;
+}
+
+.week-progress-nav {
+  margin-top: -10px !important;
+}
+
+.pie-chart-nav {
+  font-size: 30pt;
+  color: #26AE90 !important;
+}
+
+.active-bg-font {
+  background-color: #26AE90;
+  color: #FFF !important;
+}
+
+.anchor-day-nav {
+  height: 150px;
+}
+
+.anchor-day {
+  color: #26AE90 !important;
+}
+
+.pie-chart-nav, .day-nav, .progress-chart-nav, .schedule-nav, .anchor-day-nav {
+  border-bottom: 1px solid rgba(204, 204, 204, 1);
+  color: rgba(99, 99, 99, 1);
+}
+
+.week-progress-nav, .day-nav, .progress-chart-nav, .schedule-nav, .anchor-day-nav {
+  padding: 25px;
+}
+
+.week-progress-nav {
+  height: 75px !important;
+  color: rgba(144, 144, 144, 1);
+}
+
+/*****
+* Main - Day Session Details
+*****/
+.img-container {
+  background: url('../images/kb1.jpg');
+  background-size: cover;
+}
+.session, .user-progress {
+  margin-left: 10%;
+  text-align: center;
+  color: #FFF;
+}
+
+.session > div, .user-progress > div {
+  overflow: hidden;
+}
+
+.session div > * + * {
+  margin-top: 20px;
+}
+
+.session-date {
+  margin-top: 100px;
+  font-weight: bold;
+  font-size: 16pt;
+}
+
+.time-of-workout, .time-of-day {
+  display: inline;
+  padding: 10px;
+  margin-top: 10px !important;
+}
+
+.today-session, .i-did-it-btn, .i-did-it-form, .type-of-workout, .session-details {
+  text-transform: uppercase;
+}
+
+.time-of-day, .time-of-workout, .today-session {
+  font-size: 18pt;
+}
+
+.today-session > span {
+  font-weight: bold;
+}
+
+.type-of-workout {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  display: inline-block;
+  font-size: 48pt;
+  margin: 25px 0;
+}
+
+.type-of-workout > img {
+  color: #FFF;
+  height: 40pt;
+  width: 48pt;
+  margin: 0;
+}
+
+.i-did-it-form > button{
+  margin-top: 20px;
+}
+
+.i-did-it-form {
+  text-align: center;
+  margin-top: 40px !important;
+}
+
+/*****
+* Session Details & I Did It Button
+*****/
+
+.session-details {
+  border-radius: 3px;
+  height: 55px;
+  width: 216px;
+  padding: 10px;
+  border: none;
+  background-color: #E8E8E8;
+  color: #7D7D7C;
+  margin-bottom: 20px;
+  box-shadow: 1px 5px 10px -5px black;
+  cursor: pointer;
+}
+
+.i-did-it-btn {
+  border-radius: 50px;
+  width: 400px;
+  padding: 10px;
+  border: none;
+  background-color: #26AE90;
+  color: #FFF;
+  font-size: 16pt;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.divbtn {
+  border-radius: 50px;
+  display: inline-block;
+  padding: 20px;
+  border: 1px solid lightgrey;
+  background-color: rgba(154, 175, 197, 0.17);
+  margin: 80px;  
+}
+
+/*****
+* Aside-Today
+*****/
+body.testing {
+  background: url('../images/homepage-workout2.jpg');
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.today-user {
+  float: right;
+  width: calc(20% - 10px);
+  margin-top: 10px;
+  /*position: fixed;*/
+}
+
+.today-user-image {
+  height: 150px;
+  width: calc(75% - 10px);
+  margin-left: 20px;
+}
+
+
+.today-trainer-image {
+  border: 1px solid lightgrey;
+  margin-left: 20px;
+  height: 120px;
+  width: calc(75% - 10px);
+  background-color: #FFF;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.today-trainer-image > p:nth-child(2) {
+  margin-left: 70px;
+  margin-top: -40px;
+}
+
+.today-trainer-image > p:nth-child(3), .today.trainger-image > .logged-in-user {
+  margin: 20px 0 0 10px;
+  padding: 0;
+}
+
+.today-trainer-image > .logged-in-user {
+  margin: 0 0 0 10px;
+}
+
+.logged-in-user, .today-start-date, .today-end-date, .today-end-date, .today-week-of-training, .today-percentage-complete, .today-weekly-countdown, .today-workout, .today-exercise-reps, .exercise-time, .today-exercise-category {
+  font-weight: normal;
+}
+
+.logged-in-user, .today-start-date, .today-end-date, .today-end-date, .today-week-of-training, .today-percentage-complete, .today-weekly-countdown, .today-workout, .today-exercise-reps, .exercise-time {
+  font-size: 18pt;
+  color: #26AE90;
+}
+
+/*****
+* Aside - Today Chat & Message Board Images
+*****/
+
+.today-trainer-image > img, .trainer-message-board-image > img, .user-image > img {
+  border-radius: 50px;
+  border: 5px solid white;
+  height: 60px;
+  width: 60px;
+}
+
+.today-user-image > img {
+  height: 150px;
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.today-trainer-image > img {
+  margin-left: 5px;
+  margin-top: -20px;
+}
+
+/*****
+* Aside - Today Workout Status
+*****/
+
+.today-status {
+  width: calc(75% - 10px);
+  margin: 20px;
+}
+
+.today-status > div:nth-child(even) {
+  margin-bottom: 10px;
+}
+
+.today-status > div:nth-child(odd) {
+  color: #FFF;
+}
+
+.today-week {
+  overflow: hidden;
+}
+
+.today-week-of-training {
+  float: left;
+}
+
+.today-percentage-complete {
+  margin-left: 75%;
+} 
+
+.today-weekly-countdown {
+  font-size: 40pt;
+}
+
+/*****
+* Main - Today
+*****/
+
+.today-items {
+  width: calc(60% - 10px);
+  overflow: hidden;
+  /*float: left;*/
+  margin-left: 15%;
+}
+
+.today-link, .progress-link, .schedule-link {
+  color: rgba(153, 153, 153, 0.35);
+  height: 60px;
+  padding: 10px;
+  font-size: 14pt;
+  overflow: hidden;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid lightgrey;
+  width: calc(34% - 10px);
+}
+
+.today-training, .today-trainer-image, .today-link, .progress-link, .schedule-link, textarea.message {
+  box-shadow: 1px 5px 10px -5px lightgrey;
+}
+
+.today-link {
+  border-top: 5px solid #5267ff;
+}
+
+.today-link:hover {
+  color: #5267FF;
+}
+
+.progress-link {
+  border-top: 5px solid #D634FF;
+}
+
+.progress-link:hover {
+  color: #D634FF;
+}
+
+.schedule-link {
+  border-top: 5px solid #39E1E5;
+}
+
+.schedule-link:hover {
+  color: #39E1E5;
+}
+
+.today-items > .links > * + * {
+  margin-left: -4px;
+}
+
+.today-date, .today-workout, div.today-workout-time, .today-workout-tiles {
+  margin-left: 20px;
+}
+
+.today-date {
+  margin-top: 10px;
+  color: #26AE90;
+  font-size: 14pt;
+}
+
+.today-workout {
+  font-size: 36pt;
+  color: #26AE90;
+}
+
+.today-workout-time {
+  border-top: 2px solid rgba(211, 211, 211, 0.2);
+  border-bottom: 2px solid rgba(211, 211, 211, 0.2);
+  margin: 10px 0;
+  color: #26AE90;
+  font-size: 14pt;
+  height: 80px;
+}
+
+.today-workout-time > * + * {
+  margin-left: 20px;
+}
+
+.today-time-of-workout, .today-duration, .today-reschedule {
+  height: 60px;
+  display: inline-block;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.today-reschedule {
+  width: 160px;
+}
+
+.today-calender {
+  float: left;
+  width: 30px;
+}
+
+.today-reschedule > div:nth-child(2) {
+  margin-left: 30px;
+}
+
+.today-reschedule > div{
+  padding: 10px;
+  height: 40px;
+}
+
+/*****
+* Main - Today Workout Tiles
+*****/
+
+.today-workout-tiles {
+  text-align: center;
+  color: #666666;
+}
+
+.today-exercise-tiles > p:nth-child(1), .today-exercise-tiles > p:nth-child(2), .today-exercise-tiles > p:nth-child(3) {
+  margin: 0;
+}
+
+.today-exercise-tiles {
+  background-color: #FFF;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.today-exercise-type {
+  margin-top: 15px !important;
+}
+
+.today-exercise-reps, .exercise-time {
+  font-size: 1000%;
+  color: #26AE90;
+  margin-top: -25px !important;
+}
+
+.today-exercise-category {
+  font-size: 250%;
+  margin: -30px 0 0 0;
+}
+
+.today-exercise-each, .today-workout-complete {
+  margin-top: 0;
+}
+
+/*****
+* Main - Today Workout Completed Tile
+*****/
+
+.today-exercise-tiles, .today-workout-completed-tiles {
+  margin: 10px;
+  height: 320px;
+  overflow: hidden;
+  display: inline-block;
+  width: calc(31% - 20px);
+}
+
+.today-workout-completed-tiles {
+  background-color: #26AE90;
+  text-align: left !important;
+  padding: 25px;
+  border-color: #26AE90 !important;
+}
+.today-workout-complete, .today-exercise-submit {
+  color: #FFF;
+}
+
+.today-workout-complete {
+  font-size: 225%;
+  font-weight: normal;
+}
+
+.today-exercise-submit {
+  margin-top: 120px;
+}
+
+/*****
+* Main - Today Message Board
+*****/
+
+div.today-message-board {
+  width: 100%;
+  min-height: 100px;
+}
+
+.today-message-board > div {
+  width: calc(96% - 10px);
+  margin: 20px;
+  overflow: hidden;
+  background-color: #FFF;
+}
+
+.today-message-board > div, .trainer-message-board-post, .user-message-board-post, .today-exercise-tiles, .today-workout-completed-tiles, .login-form, .signup-form {
+  box-shadow: 1px 5px 10px -5px black;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+textarea.message {
+  border-radius: 3px;
+  background-color: #fff;
+  display: block;
+  height: 3em;
+  resize: none;
+  padding: 10px;
+}
+
+.today-message > div:nth-child(2) {
+  text-align: right;
+}
+
+textarea.message, .today-send, .trainer-message-board-post, .user-message-board-post {
+  width: calc(95% + 11px);
+  margin: 20px;
+}
+
+.user-message-board-post, .trainer-message-board-post {
+  padding: 10px;
+  /*display: none;*/
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.user-message-board-post > .user-message-board-content {
+  width: 92%;
+}
+
+.trainer-message-board-post > .trainer-message-board-image, .user-message-board-post > .user-message-board-content {
+  float: left;
+}
+
+.trainer-message-board-post > .trainer-message-board-content {
+  margin-left: 8%;
+}
+
+.user-message-board-post > .user-image {
+  margin-left: 93%;
+}
+
+.user-message-board-post > .user-message-board-content > p, .user-message-board-post > .user-image > p, .trainer-message-board-post > .trainer-message-board-image > p, .trainer-message-board-post > .trainer-message-board-content > p {
+  margin: 0;
+}
+
+button.today-send {
+  width: 6em;
+  height: 2em;
+  color: white;
+  border: none;
+  margin-top: 0;
+  font-size: 12pt;
+  padding: 5px 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #26AE90;
+}
+
+/*****
+* Main - Today Message Board - Active State
+*****/
+
+.message.expand:focus {
+  height: 6em;
+}
+
+/*****
+* Main - Progress
+*****/
+.user-progress {
+  margin-left: 10%;
+}
+
+.progress-header > * + * {
+  margin-left: -5px;
+}
+
+.progress-header {
+  background-color: #F4F4F4;
+  color: rgba(153, 153, 153, 0.35);
+  height: 150px;
+  width: 100%;
+}
+
+.progress-header > div > p:nth-child(odd) {
+  color: #878787;
+  font-weight: bold;
+}
+
+.days-completed {
+  margin-left: -2px;
+}
+
+.prog-number-of-days, .prog-number-of-sessions, .prog-longest-streak, .prog-total-minutes {
+  font-size: 24pt;
+  color: #26AE90;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.days-completed, .sessions-completed, .session-streak, .sessions-minutes {
+  color: rgba(135, 135, 135, 1);
+  height: 100%;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  width: calc(25.5555% - 10px);
+}
+
+.progress-header, .days-completed, .sessions-completed, .session-streak, .sessions-minutes {
+  font-size: 14pt;
+  text-align: center;
+  display: inline-block;
+
+}
