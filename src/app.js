@@ -1,9 +1,9 @@
 module.exports = {
 
   // MVC Namespaces
-  Models = {},
-  Collections = {},
-  Views = {},
+  Models: {},
+  Collections: {},
+  Views: {},
 
   // Settings
   Setttings: {
