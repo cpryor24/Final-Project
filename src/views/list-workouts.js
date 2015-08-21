@@ -1,5 +1,6 @@
 var $ = require('jquery');
 var Backbone = require('backbone');
+var moment = require('moment');
 var Handlebars = require('handlebars');
 var daysCollection = require('../collections/days.js');
 var routineCollection = require('../collections/workout.js')
@@ -13,92 +14,27 @@ var App = require('../app');
 var ListWorkouts = Backbone.View.extend({
 	el: $('main'),
 
-	render: function () {
-		console.log('render workouts');
+	render: function (dayId) {
 		var _this = this; 
 
-		daysCollection.fetch().done(function (cat) {
-
-			var today = 'Monday';
-
-		  	var dayModel = daysCollection.find(function (model) {
-		  		if (model.get('day') == today) {
-		  			return true
-		  		}
-		  		return false;
+		routineCollection.fetch().done(function (workout) {
+		
+			var today = moment().format("dddd");
+			var dayModel = daysCollection.findWhere({
+		  		day: today
 		  	})
 
-		  	_this.dayId = dayModel.get('id')
-
-		  	var categoryId = dayModel.get('categoryId')
-
-
-		  	var categoryModel = new App.Models.Category({id: categoryId})
-		  	categoryModel.fetch().done(function (category) {
-		    	_this.$el.html(homeTemplate(category));
+		  	var todaysroutine = routineCollection.where({
+		  		daysId: dayModel.id
+		  	}).map(function (routine) {
+		  		return routine.toJSON()
 		  	})
+
+		  	_this.$el.html(listWorkoutsTemplate(todaysroutine))
 		});
-
-		routineCollection.fetch().done(function (routine) {
-			var today = 'Monday';
-			var workoutModel = routineCollection.find(function (model) {
-				if(model.get('daysId') == today) {
-					return true;
-				}
-				return false;
-			});
-			_this.daysId = workoutModel.get('id');
-
-			console.log(_this.daysId)
-
-			// var dayId = workoutModel.get('daysId');
-
-			// var dayModel = new App.Models.Day({id: daysId})
-			// dayModel.fetch.done(function (day) {
-			// _this.$el.html(listWorkoutsTemplate(day))
-				
-			// })
-
-		})
 
 	}
 });
 
 
 module.exports = ListWorkouts;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //     App.Collections.workout.each(function(routine) {
-		  // console.log('hellll', routines.routine)
-
-		  // var output = tmpl({
-		  //  	id: routine.id,
-		  //  	type: routine.type,
-		  //  	set: routine.sets,
-		  //  	reps: routine.reps,
-		  //  	eacharm: routine.eacharm
-		  // });

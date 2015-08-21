@@ -1,6 +1,7 @@
 var $ = require('jquery');
 var Backbone = require('backbone');
 var Handlebars = require('handlebars');
+var moment = require('moment');
 var daysCollection = require('../collections/days.js');
 var categoryCollection = require('../collections/category.js');
 var homeTemplate = require('../templates/category.hbs');
@@ -23,19 +24,15 @@ var Home = Backbone.View.extend({
    
 		daysCollection.fetch().done(function (cat) {
 
-			var today = 'Monday';
+			var today = moment().format("dddd");
 
-		  	var dayModel = daysCollection.find(function (model) {
-		  		if (model.get('day') == today) {
-		  			return true
-		  		}
-		  		return false;
+		  	var dayModel = daysCollection.findWhere({
+		  		day: today
 		  	})
 
 		  	_this.dayId = dayModel.get('id')
 
 		  	var categoryId = dayModel.get('categoryId')
-
 
 		  	var categoryModel = new App.Models.Category({id: categoryId})
 		  	categoryModel.fetch().done(function (category) {

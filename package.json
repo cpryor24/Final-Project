@@ -16,7 +16,8 @@
     "jQuery": "^1.7.4",
     "jquery": "^2.1.4",
     "jquery-knob": "^1.2.11",
-    "lodash": "^3.10.1"
+    "lodash": "^3.10.1",
+    "moment": "^2.10.6"
   },
   "devDependencies": {
     "browserify": "^11.0.1",
