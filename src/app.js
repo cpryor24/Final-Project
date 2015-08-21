@@ -6,8 +6,8 @@ module.exports = {
   Views: {},
 
   // Settings
-  Setttings: {
-  	apiRoot: 'http://locoalhost:3000'
+  Settings: {
+  	apiRoot: 'http://localhost:3000'
   }
   
 }

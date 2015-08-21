@@ -1,6 +1,5 @@
 var Backbone = require('backbone');
 
-
 /****************************************
   App
 *****************************************/
@@ -8,7 +7,7 @@ var Backbone = require('backbone');
 var App = require('../app');
 
 /****************************************
-  Model: User
+  Model: Workout
 *****************************************/
 
 App.Models.Workout = Backbone.Model.extend({

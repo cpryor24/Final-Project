@@ -30,5 +30,30 @@
     "json-server": "^0.7.25",
     "rimraf": "^2.4.2",
     "vinyl-source-stream": "^1.1.0"
-  }
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim",
+      "hbsfy"
+    ]
+  },
+  "browserify-shim": {
+    "backbone": {
+      "depends": [
+        "jquery:jQuery",
+        "underscore:_"
+      ],
+      "exports": "Backbone"
+    },
+    "bootstrap": {
+      "depends": [
+        "jquery:jQuery"
+      ]
+    },
+    "jquery": "jQuery",
+    "underscore": {
+      "exports": "_"
+    }
+  },
+  "private": true
 }

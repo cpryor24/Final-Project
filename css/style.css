@@ -112,7 +112,7 @@ header .default-settings-logout {
   right: 0;
   padding: 20px;
   color: #FFF;
-  width: 265px;
+  width: 220px;
   background-color: #26AE90;
   height: 70px;
 }
@@ -212,10 +212,10 @@ header .default-settings-logout {
   width: 12% !important;
 }
 
-.fa.fa-envelope, .fa.fa-cog.fa-spin, .fa.fa-users, .fa.fa-clone, .fa.fa-calendar, .fa.fa-tachometer {
-  /*padding: 20px;*/
+/*.fa.fa-envelope, .fa.fa-users, .fa.fa-clone, .fa.fa-calendar, .fa.fa-tachometer {
+  padding: 20px;
   margin-right: 30px;
-}
+}*/
 
 /*****
 * Login, Signup & User-Settings Form
@@ -455,9 +455,9 @@ header .default-settings-logout {
   overflow: hidden;
 }
 
-.session div > * + * {
+/*.session div > * + * {
   margin-top: 20px;
-}
+}*/
 
 .session-date {
   margin-top: 100px;
@@ -771,6 +771,7 @@ body.testing {
 .today-workout-tiles {
   text-align: center;
   color: #666666;
+  width: 60%;
 }
 
 .today-exercise-tiles > p:nth-child(1), .today-exercise-tiles > p:nth-child(2), .today-exercise-tiles > p:nth-child(3) {
@@ -802,13 +803,20 @@ body.testing {
   margin-top: 0;
 }
 
+.today-file {
+  text-align: right !important;
+  margin: -40px 5px;
+  padding: 5px;
+  color: #26AE90;
+}
+
 /*****
 * Main - Today Workout Completed Tile
 *****/
 
 .today-exercise-tiles, .today-workout-completed-tiles {
   margin: 10px;
-  height: 320px;
+  height: 340px;
   overflow: hidden;
   display: inline-block;
   width: calc(31% - 20px);
