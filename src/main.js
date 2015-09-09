@@ -1,21 +1,27 @@
 $(function() {
  
- // Signin form popup
-  $(".signin-link").on('click', function() {
-    $(".logindiv").css("display", "block");	
-  });
+    // Signin form popup
+    $(".signin-link").on('click', function() {
+        $(".logindiv").css("display", "block");	
+    });
 
-  // Login form popup login-button click event.
+    // Login form popup login-button click event.
 
-  // Signup form popup
-  $('.signup-link').on('click', function() {
-    $('.signupdiv').css('display', 'block');
-  });
+    // Signup form popup
+    $('.signup-link').on('click', function() {
+        $('.signupdiv').css('display', 'block');
+    });
 
-  // Setting form popup
-  $('.setting-link').on('click', function() {
-  	$('.settingdiv').css('display', 'block');
-  });
+    // Setting form popup
+    $('.setting-link').on('click', function() {
+        $('.settingdiv').css('display', 'block');
+    });
+
+    // Session Details link
+    $('.schedule-nav').on('click', function(e) {
+        e.preventDefault();
+        moment().day();
+    });
 
 
 // Session completed highcharts

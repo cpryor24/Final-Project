@@ -12,9 +12,9 @@ var App = require('../app');
 
 App.Models.Category = Backbone.Model.extend({
 	url: function() {
-	  var base = App.Settings.apiRoot + '/category';
-	  if (this.isNew()) return base;
-	  return base + '/' + this.id
+	  	var base = App.Settings.apiRoot + '/category';
+	  	if (this.isNew()) return base;
+	  	return base + '/' + this.id
 	}
 });
 

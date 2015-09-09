@@ -1,28 +1,58 @@
-<div class="today-date">Thursday August 27, 2015</div>
-<div class="today-workout">Upper Body Weight Training</div>
-<div class="today-workout-time">
-	<div class="today-time-of-workout">
-		<div>Time of workout</div>
-		<div><i class="fa fa-clock-o"></i> 4:00 pm</div>	
+<div class="today-items">
+	<div class="today-date">Thursday August 27, 2015</div>
+	<div class="today-workout">{{type}}</div>
+	<div class="today-workout-time">
+		<div class="today-time-of-workout">
+			<div>Time of workout</div>
+			<div><i class="fa fa-clock-o"></i> 4:00 pm</div>	
+		</div>
+		<div class="today-duration">
+			<div>Duration</div>
+			<div><i class="fa fa-hourglass-start"></i> 30 Min</div>
+		</div>
+		<div class="today-reschedule">
+			<div class="today-calender"><i class="fa fa-calendar"></i></div>
+			<div>Reschedule</div>	
+		</div>
 	</div>
-	<div class="today-duration">
-		<div>Duration</div>
-		<div><i class="fa fa-hourglass-start"></i> 30 Min</div>
+	<div class="today-workout-tiles">
+	{{#each this}}
+		<div class="today-exercise-tiles" data-id="{{id}}">
+			<p class="today-exercise-type">{{type}}</p>
+			<p class="today-exercise-sets">{{sets}} sets</p>
+			<p class="today-exercise-reps">{{reps}}</p>
+			<p class="today-exercise-category">Reps</p>
+			<p class="today-file"><i class="fa fa-file-text fa-2x"></i></p>
+			<p class="today-edit-delete-links">
+				<a href="/#/workouts/{{id}}/edit">Edit</a> | <a href="/#/workouts/{{id}}/delete">Delete</a>
+			</p>
+		</div>
+	{{/each}}
 	</div>
-	<div class="today-reschedule">
-		<div class="today-calender"><i class="fa fa-calendar"></i></div>
-		<div>Reschedule</div>	
-	</div>
+	<div class="today-workout-completed-tiles">
+		<p class="today-workout-complete">Workout Complete!</p>
+		<p class="today-exercise-submit"><a href="/#">Send to trainer</a></p>
+	</div>	
 </div>
-<div class="today-workout-tiles">
-{{#each this}}
-	<div class="today-exercise-tiles" data-id="{{id}}">
-		<p class="today-exercise-type">{{type}}</p>
-		<p class="today-exercise-sets">{{sets}} sets</p>
-		<p class="today-exercise-reps">{{reps}}</p>
-		<p class="today-exercise-category">Reps</p>
-		<p class="today-exercise-each">{{eacharm}}</p>
-		<p class="today-file"><i class="fa fa-file-text fa-2x"></i></p>
+<aside class="today-user">
+	<div class="today-user-image"><img src="../images/wo1.jpg" alt=""></div>
+	<div class="today-trainer-image">
+		<img src="../images/headshot.jpg" alt="Trainer">
+		<p>Brandon James says,</p>
+		<p>Happy Wednesday,</p>
+		<p class="logged-in-user" data-name="">Tammy Johnson</p>
 	</div>
-{{/each}}
-</div>
+	<div class="today-status">
+		<div>Start Date</div>
+		<div class="today-start-date" data-start-date="">2 Sept 15</div>
+		<div>End Date</div>
+		<div class="today-end-date" data-end-date="">25 Nov 15</div>
+		<div class="today-status-bar"></div>
+		<div class="today-week">
+			<div class="today-week-of-training" data-week="">Week 1 of 12</div>
+			<div class="today-percentage-complete" data-percentage="">0%</div>	
+		</div>
+		<div>Countdown Till Anchor Day</div>
+		<div class="today-weekly-countdown" data-countdown="">5:23:21</div>	
+	</div>
+</aside>

@@ -1,13 +1,13 @@
 module.exports = {
 
-  // MVC Namespaces
-  Models: {},
-  Collections: {},
-  Views: {},
+	// MVC Namespaces
+	Models: {},
+	Collections: {},
+	Views: {},
 
-  // Settings
-  Settings: {
-  	apiRoot: 'http://localhost:3000'
-  }
+  	// Settings
+  	Settings: {
+  		apiRoot: 'http://localhost:3000'
+  	}
   
 }

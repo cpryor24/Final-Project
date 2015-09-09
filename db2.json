@@ -1,0 +1,71 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "first name": "Tammy",
+      "last name": "Johnson",
+      "age": 26,
+      "height": 5.5,
+      "weight": 125,
+      "gender": "female",
+      "email": "tjohnson@gmail.com",
+      "img": "../images/wo1.jpg"
+    }
+  ],
+
+
+  "days": [
+    {
+      "id": 1,
+      "usersId": 1,
+      "day": "Monday",
+      "categoryId": 1
+    },
+    {
+      "id": 2,
+      "usersId": 1,
+      "day": "Wednesday",
+      "categoryId": 2
+    }
+  ],
+
+
+  "workout": [
+    {
+      "id": 1,
+      "daysId": 1,
+      "type": "Dumbbell Bicep Curls",
+      "reps": 10,
+      "sets": 3,
+      "minute": "",
+      "lbs": "",
+      "each arm": true,
+      "each leg": false
+    },
+    {
+      "id": 2,
+      "daysId": 1,
+      "type": "Barbell Overhead Press",
+      "reps": 10,
+      "sets": 3,
+      "minute": "",
+      "lbs": "",
+      "each arm": false,
+      "each leg": false
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "type": "upper body weight training"
+    },
+    {
+      "id": 2,
+      "type": "lower body weight training"
+    },
+    {
+      "id": 3,
+      "type": "cardio training"
+    }
+  ]
+}

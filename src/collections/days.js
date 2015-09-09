@@ -11,8 +11,8 @@ var Day = require('../models/days');
 *****************************************/
 
 var DayCollection = Backbone.Collection.extend({
-  url: App.Settings.apiRoot + '/days',
-  model: Day
+	url: App.Settings.apiRoot + '/days',
+  	model: Day
 });
 
 App.Collections.day = new DayCollection;

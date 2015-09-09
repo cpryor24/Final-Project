@@ -221,9 +221,9 @@ header .default-settings-logout {
 * Login, Signup & User-Settings Form
 *****/
 
-.login-form, .signup-form, .user-settings-form{
+.login-form, .signup-form, .user-settings-form, .user-workout-set-form{
   width: 350px;
-  min-height: 350px;
+  min-height: z50px;
   padding: 30px;
   margin:0px;
   left: 50%;
@@ -232,6 +232,10 @@ header .default-settings-logout {
   margin-top:-158px;
   position: relative;
   background-color: rgba(255, 255, 255, 0.04);
+}
+
+.user-workout-set-form {
+  height: 300px !important;
 }
 
 .logindiv, .signupdiv, .settingdiv {
@@ -334,7 +338,7 @@ header .default-settings-logout {
 
 .user-tracking, .admin-tracking {
   position: fixed;
-  margin-top: -71px;
+  margin-top: -70px;
   width: 10%;
   height: 100%;
   background-color: #F4F4F4;
@@ -358,7 +362,7 @@ header .default-settings-logout {
 .default-logo {
   height: 70px;
   background-color: #26AE90 !important;
-  padding: 15px;
+  padding: 15px 0;
   color: #FFF;
   font-size: 16pt;
   text-transform: uppercase;
@@ -507,6 +511,46 @@ header .default-settings-logout {
   margin-top: 40px !important;
 }
 
+.add-set, .remove-set, .duplicate-set {
+  /*height: 60px;*/
+  display: inline-block;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.workout-set-container {
+  color: rgba(153, 153, 153, 0.35);
+  /*height: 60px;*/
+  padding: 10px;
+  font-size: 14pt;
+  overflow: hidden;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid lightgrey;
+  width: calc(34% - 10px);
+  /*overflow: hidden;*/
+  background-color: red;
+}
+
+.workout-set-title {
+  /*float: left;*/
+  margin: 10px;
+  background-color: orange;
+  /*padding: 10px;*/
+}
+
+.workout-set-content {
+  /*margin-left: 70px;*/
+  background-color: green;
+  /*height: 80px;*/
+}
+
+.workout-set-content > input {
+  /*margin-top: 10px;*/
+  padding: 10px;
+  width: 70px;
+  text-align: center;
+}
 /*****
 * Session Details & I Did It Button
 *****/
@@ -554,10 +598,13 @@ body.testing {
   background-size: cover;
 }
 .today-user {
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
   width: calc(20% - 10px);
-  margin-top: 10px;
-  /*position: fixed;*/
+  transform: translate(0, 85px);
+  /*transform: translate(50px, 85px);*/
+  text-align: left;
 }
 
 .today-user-image {
@@ -571,6 +618,7 @@ body.testing {
   border: 1px solid lightgrey;
   margin-left: 20px;
   height: 120px;
+  color: #909090;
   width: calc(75% - 10px);
   background-color: #FFF;
   border-bottom-right-radius: 5px;
@@ -637,7 +685,8 @@ body.testing {
 }
 
 .today-status > div:nth-child(odd) {
-  color: #FFF;
+  color: #909090;
+  font-weight: bold;
 }
 
 .today-week {
@@ -661,10 +710,10 @@ body.testing {
 *****/
 
 .today-items {
-  width: calc(60% - 10px);
+  width: calc(70% - 10px);
   overflow: hidden;
   /*float: left;*/
-  margin-left: 15%;
+  margin-left: 5%;
 }
 
 .today-link, .progress-link, .schedule-link {
@@ -717,20 +766,20 @@ body.testing {
 
 .today-date {
   margin-top: 10px;
-  color: #26AE90;
+  color: #F4F4F4;
   font-size: 14pt;
 }
 
 .today-workout {
   font-size: 36pt;
-  color: #26AE90;
+  color: #F4F4F4;
 }
 
 .today-workout-time {
   border-top: 2px solid rgba(211, 211, 211, 0.2);
   border-bottom: 2px solid rgba(211, 211, 211, 0.2);
   margin: 10px 0;
-  color: #26AE90;
+  color: #F4F4F4;
   font-size: 14pt;
   height: 80px;
 }
@@ -771,7 +820,7 @@ body.testing {
 .today-workout-tiles {
   text-align: center;
   color: #666666;
-  width: 60%;
+  width: 95%;
 }
 
 .today-exercise-tiles > p:nth-child(1), .today-exercise-tiles > p:nth-child(2), .today-exercise-tiles > p:nth-child(3) {
@@ -799,7 +848,7 @@ body.testing {
   margin: -30px 0 0 0;
 }
 
-.today-exercise-each, .today-workout-complete {
+.today-workout-complete {
   margin-top: 0;
 }
 
@@ -808,6 +857,15 @@ body.testing {
   margin: -40px 5px;
   padding: 5px;
   color: #26AE90;
+}
+
+.today-edit-delete-links {
+  transform: translateY(30px);
+}
+
+.today-edit-delete-links > a:hover {
+  color: #26AE90;
+  font-weight: bold;
 }
 
 /*****
@@ -841,6 +899,11 @@ body.testing {
   margin-top: 120px;
 }
 
+.today-exercise-submit > a:hover {
+  font-weight: bold;
+  font-size: 14pt;
+}
+
 /*****
 * Main - Today Message Board
 *****/
@@ -857,7 +920,7 @@ div.today-message-board {
   background-color: #FFF;
 }
 
-.today-message-board > div, .trainer-message-board-post, .user-message-board-post, .today-exercise-tiles, .today-workout-completed-tiles, .login-form, .signup-form, .user-settings-form {
+.today-message-board > div, .trainer-message-board-post, .user-message-board-post, .today-exercise-tiles, .today-workout-completed-tiles, .login-form, .signup-form, .user-settings-form, .user-workout-set-form {
   box-shadow: 1px 5px 10px -5px black;
   border: 1px solid lightgrey;
   border-radius: 5px;
@@ -978,3 +1041,29 @@ button.today-send {
   display: inline-block;
 
 }
+
+/*****
+* Main - Workout Form
+*****/
+
+form.workout {
+  color: black;
+}
+
+form.workout input {
+  margin-left: 50px;
+/*  width: 60px;
+*/}
+
+form.workout label, form.workout select {
+  text-align: right;
+  width: 200px;
+}
+
+.finish-session {
+  font-size: 30pt;
+  text-align: right !important;
+  width: 70%;
+}
+
+

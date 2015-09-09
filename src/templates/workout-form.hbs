@@ -1,0 +1,44 @@
+<form action="#" class="workout">
+	<div>
+		<label for="workout-type">Name of workout: </label>
+		<input type="text" id="workout-type" name="type" value="{{type}}" required>		
+	</div>
+	<div>
+		<label for="sets">Sets: </label>
+		<select name="sets" id="sets" required>
+			<option disabled selected value=""> Select # of sets </option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+	</div>
+	<div>
+		<label for="reps">Reps: </label>
+		<input type="text" id="reps" name="reps" value="{{reps}}" required>
+	</div>
+	<div>
+		<label for="minutes">Minutes: </label>
+		<select name="minutes" id="minutes" value="" required>
+			<option disabled selected value=""> Select amount of time for workout </option>
+			<option value="5">5</option>
+			<option value="10">10</option>
+			<option value="15">15</option>
+			<option value="20">20</option>
+			<option value="25">25</option>
+			<option value="30">30</option>
+		</select>		
+	</div>
+	<div>
+		<label for="daysId">Day of week: </label>
+		<select name="daysId" id="daysId" data-id={{id}} value="" required>
+			<option disabled selected value=""> Select day of workout </option>
+			<option value="1">Monday</option>
+			<option value="2">Tuesday</option>
+			<option value="3">Wednesday</option>
+			<option value="4">Thursday</option>
+		</select>		
+	</div>
+	<button class="add-workout-btn" type="submit">Add Workout</button>
+</form>

@@ -2,7 +2,7 @@ var $ = require('jquery');
 var Backbone = require('backbone');
 var Handlebars = require('handlebars');
 var dayCollection = require('../collections/days.js')
-var DayListTemplate = require('../templates/day-list.hbs')
+// var DayListTemplate = require('../templates/day-list.hbs')
 
 // App
 var App = require('../app');

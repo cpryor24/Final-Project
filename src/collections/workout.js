@@ -11,8 +11,8 @@ var Workout = require('../models/workouts');
 *****************************************/
 
 var WorkoutCollection = Backbone.Collection.extend({
-  url: App.Settings.apiRoot + '/workouts',
-  model: Workout
+	url: App.Settings.apiRoot + '/workouts',
+ 	model: Workout
 });
 
 App.Collections.workout = new WorkoutCollection;

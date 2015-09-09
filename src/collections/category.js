@@ -11,8 +11,8 @@ var Category = require('../models/category');
 *****************************************/
 
 var CategoryCollection = Backbone.Collection.extend({
-  url: App.Settings.apiRoot + '/category',
-  model: Category
+	url: App.Settings.apiRoot + '/category',
+	model: Category
 });
 
 App.Collections.category = new CategoryCollection;

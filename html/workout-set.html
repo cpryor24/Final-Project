@@ -1,0 +1,104 @@
+<div class="workout-set hidden-by-default">
+	<h1>Bicep Curls</h1>
+    <div class="sets-menu">
+        <dl class="left add-set">
+            <dd class="add-icon"></dd>
+            <dt>Add Set</dt>
+        </dl>                
+        <dl class="left remove-set">
+            <dd class="delete-icon "></dd>
+            <dt>Remove Set</dt>
+        </dl>
+        <div class="clear"></div>
+    </div>  
+
+    <div class="sets-header">
+        <div class="left set-index">set</div>
+    	<div class="left set-label set-weight">
+    		<span class="underscored" alt="Weight" title="Weight">lb</span>
+		</div>
+		<div id="1" class="left set-label set-reps">
+        	<span>Reps</span>
+   		</div>
+    </div>
+                
+    <div class="clear"></div>
+    <div class="sets-rows">
+    	<div class="exercise-set-row">
+        	<div class="row-elements">
+        		<div class="left set-index">1</div>
+        		<div class="left set-label set-weight">
+     				<input type="text" class="set-input" value="45" model-type="weight" model-index="0">
+        		</div>
+		        <div class="left set-label set-reps">
+		            <input type="text" class="set-input" value="8" model-type="reps" model-index="1">
+		        </div>
+        	</div>
+        	<div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BUFF N STUFF</title>
+	<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css' rel='styleshee' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=IM+Fell+French+Canon:400italic' rel='stylesheet' type='text/css'>	
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body> 
+	<header class="home-nav">
+		<div class="setting-link">setting</div>
+		Sign up Form
+		<div class="settingdiv">
+			<form action="" class="user-workout-set-form">
+				<div class="user-workout-set-reg-container">
+					<div class="workout-set-links hidden-by-default">
+					    <div class="sets-menu">
+					        <dl class="left add-set">
+					            <dd class="add-icon"></dd>
+					            <dt>Add Set</dt>
+					        </dl>                
+					        <dl class="left remove-set">
+					            <dd class="delete-icon "></dd>
+					            <dt>Remove Set</dt>
+					        </dl>                
+					        <dl class="left duplicate-set">
+					            <dd class="duplicate-icon"></dd>
+					            <dt>Duplicate Set</dt>
+					        </dl>
+					        <div class="clear"></div>
+					    </div>  
+					</div>
+					<div class="logo-reg">buff n stuff</div>
+					<p class="signup-content">Signup to start tracking your workouts, developing healthy habits, and reaching your goals with the help of your personal trainer.</p>
+					<div class="set workout-set-container">
+						<div class="workout-set-title"><label for="set">Set:</label></div>
+						<div class="workout-set-content"><input type="text" data-set="" name="set" id="set" placeholder="1"></div>
+					</div>
+
+					<div class="lbs workout-set-container">
+						<div class="workout-set-title"><label for="lbs">lbs:</label></div>
+						<div class="workout-set-content"><input type="text" name="lbs" id="lbs" data-lbs="" placeholder="100"></div>
+					</div>
+					<div class="reps workout-set-container">
+						<div class="workout-set-title"><label for="reps">Reps:</label></div>
+						<div class="workout-set-content"><input type="text" name="reps" id="reps" data-reps="" placeholder="10">
+					</div>
+				</div>
+					
+
+					<footer class="login-btn">
+						<button class="login-reg-btn">Save</button>
+						<button class="cancel-btn">Cancel</button>
+					</footer>
+			</form>
+		</div>
+	</header>
+		
+	<script src="../node_modules/jQuery/tmp/jquery.js"></script>
+	<script src="../src/index.js"></script>

@@ -1,0 +1,526 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"j",
+				"jQuery/"
+			],
+			[
+				"ha",
+				"handlebars"
+			],
+			[
+				"bower",
+				"bower_components/"
+			],
+			[
+				"a",
+				"arrow-left.png	w:56 h:58"
+			],
+			[
+				"in",
+				"index.js"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 75.0,
+		"last_filter": "insta",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"package ",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"package ins",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"SnippetMaker: Edit Snippet"
+			],
+			[
+				"jas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"h",
+				"Set Syntax: HTML"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"javaS",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"jasv",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 286.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/cpryor/Sites/Final Project",
+		"/home/cpryor/Sites/Final Project/css",
+		"/home/cpryor/Sites/Final Project/html",
+		"/home/cpryor/Sites/Final Project/src",
+		"/home/cpryor/Sites/Final Project/src/models",
+		"/home/cpryor/Sites/Final Project/src/sass",
+		"/home/cpryor/Sites/Final Project/src/templates",
+		"/home/cpryor/Sites/Final Project/src/util",
+		"/home/cpryor/Sites/Final Project/src/views"
+	],
+	"file_history":
+	[
+		"/home/cpryor/Sites/Final Project/html/today2.html",
+		"/home/cpryor/Sites/Final Project/db.json",
+		"/home/cpryor/Sites/Final Project/index.html",
+		"/home/cpryor/Sites/Final Project/css/style.css",
+		"/home/cpryor/Sites/Final Project/src/index.js",
+		"/home/cpryor/Sites/Final Project/src/views/list-workouts.js",
+		"/home/cpryor/Sites/Final Project/src/views/finish.js",
+		"/home/cpryor/Sites/Final Project/src/templates/finish.hbs",
+		"/home/cpryor/Sites/Final Project/src/views/category.js",
+		"/home/cpryor/Sites/Final Project/src/util/totalPercent.js",
+		"/home/cpryor/Sites/Final Project/src/views/workout-form.js",
+		"/home/cpryor/Sites/Final Project/src/templates/category.hbs",
+		"/home/cpryor/Sites/Final Project/src/main.js",
+		"/home/cpryor/Sites/Final Project/src/views/days.js",
+		"/home/cpryor/Sites/Final Project/src/templates/list-workouts.hbs",
+		"/home/cpryor/Sites/Final Project/src/templates/workout-form.hbs",
+		"/home/cpryor/Sites/Final Project/src/views/homepage.js",
+		"/home/cpryor/Sites/Final Project/src/templates/add-workout.hbs",
+		"/home/cpryor/Sites/Final Project/html/settings.html",
+		"/home/cpryor/Sites/Final Project/html/add-workout.html",
+		"/home/cpryor/Sites/Final Project/html/workout-set.html",
+		"/home/cpryor/Sites/Final Project/src/models/days.js",
+		"/home/cpryor/Sites/Final Project/src/models/category.js",
+		"/home/cpryor/Sites/Final Project/gulpfile.js",
+		"/home/cpryor/Sites/Final Project/src/models/workouts.js",
+		"/home/cpryor/Sites/Final Project/src/collections/days.js",
+		"/home/cpryor/Sites/Final Project/src/collections/category.js",
+		"/home/cpryor/Sites/Final Project/src/app.js",
+		"/home/cpryor/Sites/Final Project/src/collections/workout.js",
+		"/home/cpryor/Sites/Final Project/html/today.html",
+		"/home/cpryor/Sites/Final Project/src/templates/list-workouts-header.hbs",
+		"/home/cpryor/Sites/Final Project/src/templates/day-list.hbs",
+		"/home/cpryor/Sites/Final Project/src/collections/home.js",
+		"/home/cpryor/Sites/Final Project/src/templates/home.hbs",
+		"/home/cpryor/Sites/Final Project/package.json",
+		"/home/cpryor/Sites/Final Project/html/login.html",
+		"/home/cpryor/Sites/Final Project/db2.json",
+		"/home/cpryor/Sites/Final Project/src/db.json",
+		"/home/cpryor/Sites/Final Project/images/female-wo.jpg",
+		"/home/cpryor/Sites/Final Project/html/admin.html",
+		"/home/cpryor/Sites/Final Project/html/new.html",
+		"/home/cpryor/Sites/Final Project/html/style.css",
+		"/home/cpryor/Sites/Final Project/html/progress.html",
+		"/home/cpryor/Sites/Final Project/.gitignore",
+		"/home/cpryor/Sites/Final Project/html/day.html",
+		"/home/cpryor/Sites/Final Project/progress.html",
+		"/home/cpryor/Sites/Final Project/test.html",
+		"/home/cpryor/Sites/Final Project/day.html",
+		"/home/cpryor/Sites/Final Project/jquery.html",
+		"/home/cpryor/Sites/Final Project/login.html",
+		"/home/cpryor/Sites/Final Project/today.html",
+		"/home/cpryor/Sites/Final Project/src/sass/style.scss",
+		"/home/cpryor/Sites/Final Project/sass/style.scss",
+		"/home/cpryor/Sites/Final Project/sass/default.scss",
+		"/home/cpryor/review/gmaps/src/collection/home-collection.js",
+		"/home/cpryor/review/gmaps/src/model/home-model.js",
+		"/home/cpryor/review/gmaps/src/view/homes-view.js",
+		"/home/cpryor/review/gmaps/index.html",
+		"/home/cpryor/review/gmaps/src/model/realtor-model.js",
+		"/home/cpryor/review/gmaps/src/view/homes-profile-view.js",
+		"/home/cpryor/review/gmaps/index.js",
+		"/home/cpryor/review/gmaps/db.json",
+		"/home/cpryor/review/gmaps/main.js",
+		"/home/cpryor/review/gmaps/style.css",
+		"/home/cpryor/review/gmaps/views/home-collection.js",
+		"/home/cpryor/js review/min-proj/index.js",
+		"/home/cpryor/js review/min-proj/index.html",
+		"/home/cpryor/js review/rv/index.html",
+		"/home/cpryor/js review/rv/index.js",
+		"/home/cpryor/js review/example/index.js",
+		"/home/cpryor/js review/example/index.html",
+		"/home/cpryor/js review/index.js",
+		"/home/cpryor/js review/handlebars/index.js",
+		"/home/cpryor/js review/handlebars/index.html",
+		"/home/cpryor/js review/index.html",
+		"/home/cpryor/OnlineCourses/javascript_jquery/faq accordian slider/index.html",
+		"/home/cpryor/OnlineCourses/javascript_jquery/faq accordian slider/js/index.js",
+		"/home/cpryor/OnlineCourses/javascript_jquery/faq accordian slider/css/style.css",
+		"/home/cpryor/OnlineCourses/javascript_jquery/jquery content slider/index.html",
+		"/home/cpryor/OnlineCourses/javascript_jquery/jquery content slider/index.js",
+		"/home/cpryor/OnlineCourses/javascript_jquery/jquery content slider/style.css",
+		"/home/cpryor/OnlineCourses/javascript_jquery/Simple Javascript Quiz/index.html",
+		"/home/cpryor/OnlineCourses/javascript_jquery/Simple Javascript Quiz/style.css",
+		"/home/cpryor/OnlineCourses/javascript_jquery/Simple Javascript Quiz/index.js",
+		"/home/cpryor/Sites/Milestone5/BackboneJS-User-CRUD/index.html",
+		"/home/cpryor/Sites/Milestone5/BackboneJS-User-CRUD/css/main.css",
+		"/home/cpryor/Sites/Milestone5/BackboneJS-User-CRUD/src/templates/list-products.hbs",
+		"/home/cpryor/Sites/Milestone5/BackboneJS-User-CRUD/db.json",
+		"/home/cpryor/Sites/Milestone5/BackboneJS-User-CRUD/.gitignore",
+		"/home/cpryor/Sites/Milestone5/BackboneJS-User-CRUD/src/templates/list-users.hbs",
+		"/home/cpryor/Sites/Milestone5/BackboneJS-User-CRUD/src/templates/product-form.hbs",
+		"/home/cpryor/Sites/Milestone5/BackboneJS-User-CRUD/src/views/list-users.js",
+		"/home/cpryor/Sites/Milestone5/BackboneJS-User-CRUD/src/views/list-products.js",
+		"/home/cpryor/Sites/Milestone5/BackboneJS-User-CRUD/package.json",
+		"/home/cpryor/Sites/online_review/index.html",
+		"/home/cpryor/Sites/online_review/src/main.js",
+		"/home/cpryor/Sites/online_review/src/views/index.html",
+		"/home/cpryor/Sites/online_review/src/views/src",
+		"/home/cpryor/Sites/online_review/src/views/online_review",
+		"/home/cpryor/Sites/Milestone5/BackboneJS User CRUD/package.json",
+		"/home/cpryor/Sites/Lessons/Backbone_brad/App/index.html",
+		"/home/cpryor/Sites/Lessons/Backbone_brad/App/src/main.js",
+		"/home/cpryor/Sites/Lessons/Backbone_brad/App/src/views/list-users.js",
+		"/home/cpryor/Sites/Lessons/Backbone_brad/App/src/views/user-profile.js",
+		"/home/cpryor/Sites/Lessons/Backbone_brad/App/src/collections/user.js",
+		"/home/cpryor/Sites/Lessons/Backbone_brad/App/src/models/user.js",
+		"/home/cpryor/Sites/Lessons/Backbone_brad/App/db.json",
+		"/home/cpryor/Sites/Lessons/Backbone_brad/App/src/Views/list-users.js",
+		"/home/cpryor/Sites/Lessons/Backbone_brad/App/main.js",
+		"/home/cpryor/Sites/Lessons/Program/Program-Challenge/index.html",
+		"/home/cpryor/Sites/Lessons/Program/Program-Challenge/db.json",
+		"/home/cpryor/Sites/Lessons/Permission/permissions-challenge/index.html",
+		"/home/cpryor/Sites/Lessons/Permission/permissions-challenge/index.js",
+		"/home/cpryor/Sites/Milestone4/jQuery Twitter v2/templates/template-tweet.handlebars",
+		"/home/cpryor/Sites/Lessons/Javascript/Backbone/Router/index.html",
+		"/home/cpryor/Sites/Lessons/Javascript/Backbone/Router/index.js",
+		"/home/cpryor/Sites/Lessons/Javascript/Backbone/Router/bower_components/backbone/backbone.js",
+		"/home/cpryor/Sites/Lessons/Javascript/Backbone/Router/bower_components/backbone/backbone-min.js",
+		"/home/cpryor/Sites/Lessons/Javascript/Backbone/index.js",
+		"/home/cpryor/Sites/Lessons/Javascript/Backbone/index.html",
+		"/home/cpryor/Sites/Milestone4/jQuery Twitter v2/db.json",
+		"/home/cpryor/Sites/Lessons/M4 review/LOOPS/index.js",
+		"/home/cpryor/Sites/Lessons/M4 review/LOOPS/index.html",
+		"/home/cpryor/Sites/Lessons/M4 review/style.css",
+		"/home/cpryor/Sites/Lessons/M4 review/index.html",
+		"/home/cpryor/Sites/Lessons/Javascript/Array/index.js",
+		"/home/cpryor/Sites/Milestone4/jQuery Twitter v2/gulpfile.js",
+		"/home/cpryor/Sites/Milestone4/jQuery Twitter v2/js/template.js"
+	],
+	"find":
+	{
+		"height": 45.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"data",
+			".default-logo",
+			".today-date, .today-workout",
+			".today-exercise-tiles",
+			".today-exercise-each",
+			"workout-day",
+			"workout-time",
+			"App.Views.WorkoutForm",
+			"product",
+			"color",
+			"product",
+			"name",
+			"product",
+			",\n      \"eacharm\": \"(each arm)\",\n      \"eachleg\": \"\"",
+			"minute",
+			"minutes",
+			"30",
+			"25",
+			"20",
+			"15",
+			"10",
+			"5",
+			"time",
+			"name",
+			"workout-name",
+			"51-60",
+			"41-50",
+			"31-40",
+			"5 minutes</option>\n			<option value=\"",
+			"21-30",
+			"11-20",
+			"0-10",
+			"0-10\"",
+			"0-10",
+			"cooking",
+			"Cooking",
+			"cooking",
+			"ingredients",
+			"protein",
+			"other",
+			"vegetarian",
+			"seafood",
+			"beef",
+			"chicken",
+			"div",
+			"-160",
+			"(-160px",
+			"-160",
+			".default-logo",
+			"user-workout-set-form",
+			".user-workout-",
+			".user-workout-set",
+			".links",
+			" {",
+			".user-workout-set-form",
+			".user-settings-form",
+			";\n",
+			".user-settings-form",
+			".settings-container",
+			"settings",
+			"weight",
+			"Weight",
+			"weight",
+			"height",
+			"Height",
+			"height",
+			"age",
+			"_this",
+			"routine",
+			"listWorkouts",
+			"ListWorkouts",
+			"type",
+			"return base + '/' + this.id",
+			"if (this.isNew()) return base;",
+			"var base = App.Settings.apiRoot +",
+			" url: function() {\n    var base = App.Settings.apiRoot +",
+			"Backbone.Model.extend",
+			" \n",
+			".session",
+			".today-workout-tiles",
+			"routines",
+			"workout",
+			"var App = require('../app');\n",
+			"var Backbone = require('backbone');\n",
+			",\n",
+			"settings-content",
+			"settings-title",
+			"settings-titl",
+			"first-name",
+			"last",
+			"Last Name",
+			"last-name",
+			"last-name\"",
+			"Last Name",
+			"last-name",
+			"Last Name",
+			"last-name",
+			"first",
+			"First",
+			"first",
+			"First",
+			"first",
+			"Name",
+			"signup-form",
+			"form",
+			".signup-form",
+			".today-exercise-reps",
+			".today-",
+			"70px",
+			".today-workout-time",
+			".today-date",
+			".today-exercise-reps",
+			".today-workout",
+			".logged-in-user",
+			"<div class=\"links\">\n					<div class=\"today-link\"><a href=\"today.html\">Today</a></div>\n					<div class=\"progress-link\"><a href=\"progress.html\">Progress</a></div>\n					<div class=\"schedule-link\"><a href=\"schedule.html\">Schedule</a></div>	\n				</div>",
+			".today-container",
+			".day-nav",
+			"<div class=\"today-duration\">\n						<div>Duration</div>\n						<div>30 Min</div>\n					</div>",
+			".pie-chart-nav",
+			";\n",
+			".links",
+			".task-nav",
+			" .task-nav",
+			".task-nav",
+			"header.primary-nav",
+			".i-did-it-form > button{\n  margin-top: 20px;\n}",
+			"span",
+			"div"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 37.0
+	},
+	"input":
+	{
+		"height": 54.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "fitness.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 227.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -5,6 +5,7 @@ var moment = require('moment');
 var daysCollection = require('../collections/days.js');
 var categoryCollection = require('../collections/category.js');
 var homeTemplate = require('../templates/category.hbs');
+var finishTemplate = require('../templates/finish.hbs');
 
 // App
 var App = require('../app');
@@ -36,6 +37,7 @@ var Home = Backbone.View.extend({
 
 		  	var categoryModel = new App.Models.Category({id: categoryId})
 		  	categoryModel.fetch().done(function (category) {
+		  		category.date = moment().format("dddd, MMMM Do YYYY");
 		    	_this.$el.html(homeTemplate(category));
 		  	})
 		});
@@ -45,7 +47,7 @@ var Home = Backbone.View.extend({
 		event.preventDefault(),
 
 		// Route to workout for the day
-		App.router.navigate('workouts/' + this.dayId, true);
+		App.router.navigate('#/workouts/' + this.dayId, true);
 	}
 });
 
